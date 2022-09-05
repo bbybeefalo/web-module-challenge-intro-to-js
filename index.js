@@ -224,7 +224,7 @@ function feet(centimeters){
   return centimeters / 30.48;
 }
 
-console.log(feet(4));
+console.log(feet(60));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
