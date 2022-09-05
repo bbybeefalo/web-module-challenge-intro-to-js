@@ -187,10 +187,37 @@ Use the game function below to do the following:
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
 
-
+let computer = Math.random();
+ if (computer <= .33) {
+  computer = "rock";
+ } else if (computer >= .66) {
+  computer = "paper";
+ } else {
+  computer = "scissors";
+ }
 
 function game(user, computer){
-  /*add your code here*/
+  if (user === computer){
+    return "it's a tie";
+  } else if (user === "rock"){
+    if (computer === "scissors"){
+      return "you win!";
+    } else {
+      return "you lose!";
+    }
+  } else if (user === "paper"){
+    if (computer === "rock"){
+      return "you win!";
+    } else {
+      return "you lose!";
+    }
+  } else if (user === "scissors"){
+    if (computer === "paper") {
+      return "you win!";
+    } else {
+      return "you lose!";
+    }
+  }
 }
 
 
@@ -224,7 +251,6 @@ function feet(centimeters){
   return centimeters / 30.48;
 }
 
-console.log(feet(60));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -241,10 +267,11 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(n){
+      return n  + " bottles of soda on the wall, " + n + " bottles of soda, take one down pass it around " + (n - 1) + " bottles of soda on the wall";
 }
 
+console.log(annoyingSong(3));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
