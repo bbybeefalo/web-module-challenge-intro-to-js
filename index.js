@@ -269,10 +269,6 @@ function annoyingSong(n){
       return n  + " bottles of soda on the wall, " + n + " bottles of soda, take one down pass it around " + (n - 1) + " bottles of soda on the wall";
 }
 
-for (i = 10; i <= 1; i--) {
-  console.log(annoyingSong(i));
-}
-
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 //Grade Calculator
